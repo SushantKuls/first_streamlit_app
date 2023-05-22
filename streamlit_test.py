@@ -45,7 +45,7 @@ my_cur = my_cnx.cursor()
 add_fruit_choice = streamlit.text_input('What fruit would you like add about?')
 streamlit.write('The user entered ', add_fruit_choice)
 
-my_cur.execute("insert into FRUIT_LOAD_LIST values (add_fruit_choice)")
+my_cur.execute("insert into FRUIT_LOAD_LIST values ('jackfruit')")
 #values ('banana')
 my_data_row = my_cur.fetchone()
 streamlit.text("fruti load list:")
